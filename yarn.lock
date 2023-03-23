@@ -615,12 +615,20 @@
     ghost-ignition "^4.2.4"
     lodash "^4.17.20"
 
-"@tryghost/errors@0.2.11", "@tryghost/errors@^0.2.10", "@tryghost/errors@^0.2.11", "@tryghost/errors@^0.2.9":
+"@tryghost/errors@0.2.11":
   version "0.2.11"
   resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.11.tgz#db42d49c6e703b46efa2097cfafcf3d401789c07"
   integrity sha512-OKVaefe6YxNZkhsJzqvzBs4wFA4XCkqcguzJikK6qGaJ+w1hjqGLOab9d1AJ8bLCVFTzptv24jjT/CHY9g5Ojg==
   dependencies:
     ghost-ignition "^4.6.1"
+    lodash "^4.17.21"
+
+"@tryghost/errors@^0.2.10", "@tryghost/errors@^0.2.11", "@tryghost/errors@^0.2.12", "@tryghost/errors@^0.2.9":
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-0.2.17.tgz#9b89f3845256ace5650593f41cc86d64965b56ed"
+  integrity sha512-Mj+bedWOwfooNA8fQdp6gIcRvWcKhJ/hOyGzu6OLFDLgEosFEeuFgXE6SsAWkf9+9NTYX30w88qGIWZqOhEAmQ==
+  dependencies:
+    "@tryghost/ignition-errors" "^0.1.0"
     lodash "^4.17.21"
 
 "@tryghost/helpers@1.1.45":
@@ -638,6 +646,14 @@
     "@tryghost/kg-parser-plugins" "^1.1.7"
     "@tryghost/mobiledoc-kit" "^0.12.4-ghost.1"
     jsdom "^16.5.3"
+
+"@tryghost/ignition-errors@^0.1.0":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@tryghost/ignition-errors/-/ignition-errors-0.1.8.tgz#6d4c4d4e02d32403ca1e574eaa91b3c0d138d6f6"
+  integrity sha512-4KYU+kDXZyP7tmzyHiUkfDy9RWxKAtA/6xTGdxYHurE5ZlT++cDDfdUtF0v3308GGUzKlBzRc3jmLjDYpngcBQ==
+  dependencies:
+    lodash "^4.17.21"
+    uuid "^8.3.2"
 
 "@tryghost/image-transform@1.0.11":
   version "1.0.11"
@@ -783,12 +799,12 @@
   resolved "https://registry.yarnpkg.com/@tryghost/mw-session-from-token/-/mw-session-from-token-0.1.20.tgz#82e72c5b1015438dc474dd85632736ce53623ae2"
   integrity sha512-w3yjYYwEMchkEZG/YE00b2dcJtf3WWJr2i9xVHQIr9ZnARHwrkVcDmbvGMunvbugVgfA00+u6MtEmZUl+r+brw==
 
-"@tryghost/package-json@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@tryghost/package-json/-/package-json-0.1.1.tgz#fdb12be61e9bf51fb076694c2f868e07e40b15ac"
-  integrity sha512-04wOfvxrIqf0eJ4jx8hPtpFLFhsWGv9VdlMzwuNlsdMCAOMy+4eU1qUe4skLuatPNo/MAWTGM4jzcgyWFNGzMg==
+"@tryghost/package-json@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@tryghost/package-json/-/package-json-0.1.2.tgz#81dedaaabaf11c682c41ed31bdaccf0b937844dc"
+  integrity sha512-q95w42/CXsFTVRSPcL7FEZQC+RicD8WJnmrkYgA5fuC/4DAemAtJS6ZB3Gtm9y0qyq8ZLs+mrmOEDjKDLA8vUA==
   dependencies:
-    "@tryghost/errors" "^0.2.11"
+    "@tryghost/errors" "^0.2.12"
     bluebird "^3.7.2"
     fs-extra "^10.0.0"
     lodash "^4.17.21"
@@ -834,36 +850,17 @@
     ghost-ignition "^4.6.2"
     lodash "^4.17.21"
 
-"@tryghost/string@0.1.19":
+"@tryghost/string@0.1.19", "@tryghost/string@^0.1.17":
   version "0.1.19"
   resolved "https://registry.yarnpkg.com/@tryghost/string/-/string-0.1.19.tgz#b5a170cc118d7fcccc7c9e69c4f01faf626c4457"
   integrity sha512-dmhGMhB/ZQPZVubKKOPoi6qXQClZCYLRbF3C1Ec1xNF+Fhd7W/7Wxz7PDYoMTSOhvelZb10XP8Uwuk9fos12HA==
   dependencies:
     unidecode "^0.1.8"
 
-"@tryghost/string@^0.1.17":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@tryghost/string/-/string-0.1.18.tgz#2cc8f92ad80d055c872731dd5410383920e934cf"
-  integrity sha512-fIHteQ2plScj08OQrlDVfRZMCoocrSOmXkMC+TFe7WEIl/QFw2HKDWJeWxr6CADve2RUDzLJzJh71KL6u61bTw==
-  dependencies:
-    unidecode "^0.1.8"
-
-"@tryghost/url-utils@1.1.4":
+"@tryghost/url-utils@1.1.4", "@tryghost/url-utils@^1.1.2":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@tryghost/url-utils/-/url-utils-1.1.4.tgz#9b7ffeafcc4331d9d2cc842e59d4a0ea37eb151e"
   integrity sha512-WLjjjSl3Hh1S+6s8lTGtCM+FPgRHDodUr5BKzMzYY74E+CSkxGJ9WyuVI2J5s5SQw0lM0s8qylWKZtGU7Ca7Hg==
-  dependencies:
-    cheerio "^0.22.0"
-    moment "^2.27.0"
-    moment-timezone "^0.5.31"
-    remark "^11.0.2"
-    remark-footnotes "^1.0.0"
-    unist-util-visit "^2.0.0"
-
-"@tryghost/url-utils@^1.1.2":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@tryghost/url-utils/-/url-utils-1.1.3.tgz#d9434c5fb4ac850eb68fbe9eec312f42b95c8676"
-  integrity sha512-oUbf1kfQuoD3GYQYjBuLcxO0ToCbrGj2KQaM2VoWEPGVD2WFy35gMG2/lUB40otG3zjljnLCa2+I9areaWI8cQ==
   dependencies:
     cheerio "^0.22.0"
     moment "^2.27.0"
@@ -4228,7 +4225,7 @@ glob-parent@^5.0.0, glob-parent@~5.1.0:
   dependencies:
     is-glob "^4.0.1"
 
-glob@7.1.6, glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@~7.1.1, glob@~7.1.6:
+glob@7.1.6:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -4240,7 +4237,7 @@ glob@7.1.6, glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glo
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@7.1.7:
+glob@7.1.7, glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@~7.1.1, glob@~7.1.6:
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
   integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
@@ -6562,41 +6559,10 @@ mobiledoc-text-renderer@0.4.0:
   resolved "https://registry.yarnpkg.com/mobiledoc-text-renderer/-/mobiledoc-text-renderer-0.4.0.tgz#473fbe50aa6cde2c3b449752f3b984834dc824d2"
   integrity sha512-+Tzfo0hhUFxS0n5FWZ0nf6WUrvnVmsxaIdq0CyeLYD1lk8oW2ml+6WLdeLlzKM5OYYi3PWV6NR9HCUG01cdvWQ==
 
-mocha@8.4.0:
+mocha@8.4.0, mocha@^8.2.0:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-8.4.0.tgz#677be88bf15980a3cae03a73e10a0fc3997f0cff"
   integrity sha512-hJaO0mwDXmZS4ghXsvPVriOhsxQ7ofcpQdm8dE+jISUOKopitvnXFQmpRR7jd2K6VBG6E26gU3IAbXXGIbu4sQ==
-  dependencies:
-    "@ungap/promise-all-settled" "1.1.2"
-    ansi-colors "4.1.1"
-    browser-stdout "1.3.1"
-    chokidar "3.5.1"
-    debug "4.3.1"
-    diff "5.0.0"
-    escape-string-regexp "4.0.0"
-    find-up "5.0.0"
-    glob "7.1.6"
-    growl "1.10.5"
-    he "1.2.0"
-    js-yaml "4.0.0"
-    log-symbols "4.0.0"
-    minimatch "3.0.4"
-    ms "2.1.3"
-    nanoid "3.1.20"
-    serialize-javascript "5.0.1"
-    strip-json-comments "3.1.1"
-    supports-color "8.1.1"
-    which "2.0.2"
-    wide-align "1.1.3"
-    workerpool "6.1.0"
-    yargs "16.2.0"
-    yargs-parser "20.2.4"
-    yargs-unparser "2.0.0"
-
-mocha@^8.2.0:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-8.3.2.tgz#53406f195fa86fbdebe71f8b1c6fb23221d69fcc"
-  integrity sha512-UdmISwr/5w+uXLPKspgoV7/RXZwKRTiTjJ2/AC5ZiEztIoOYdfKb19+9jNmEInzx5pBsCyJQzarAxqIGBNYJhg==
   dependencies:
     "@ungap/promise-all-settled" "1.1.2"
     ansi-colors "4.1.1"
@@ -9819,7 +9785,7 @@ utils-merge@1.0.1, utils-merge@1.x.x:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@8.3.2:
+uuid@8.3.2, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
