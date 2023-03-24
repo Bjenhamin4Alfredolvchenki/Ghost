@@ -834,36 +834,17 @@
     ghost-ignition "^4.6.2"
     lodash "^4.17.21"
 
-"@tryghost/string@0.1.19":
+"@tryghost/string@0.1.19", "@tryghost/string@^0.1.17":
   version "0.1.19"
   resolved "https://registry.yarnpkg.com/@tryghost/string/-/string-0.1.19.tgz#b5a170cc118d7fcccc7c9e69c4f01faf626c4457"
   integrity sha512-dmhGMhB/ZQPZVubKKOPoi6qXQClZCYLRbF3C1Ec1xNF+Fhd7W/7Wxz7PDYoMTSOhvelZb10XP8Uwuk9fos12HA==
   dependencies:
     unidecode "^0.1.8"
 
-"@tryghost/string@^0.1.17":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@tryghost/string/-/string-0.1.18.tgz#2cc8f92ad80d055c872731dd5410383920e934cf"
-  integrity sha512-fIHteQ2plScj08OQrlDVfRZMCoocrSOmXkMC+TFe7WEIl/QFw2HKDWJeWxr6CADve2RUDzLJzJh71KL6u61bTw==
-  dependencies:
-    unidecode "^0.1.8"
-
-"@tryghost/url-utils@1.1.4":
+"@tryghost/url-utils@1.1.4", "@tryghost/url-utils@^1.1.2":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@tryghost/url-utils/-/url-utils-1.1.4.tgz#9b7ffeafcc4331d9d2cc842e59d4a0ea37eb151e"
   integrity sha512-WLjjjSl3Hh1S+6s8lTGtCM+FPgRHDodUr5BKzMzYY74E+CSkxGJ9WyuVI2J5s5SQw0lM0s8qylWKZtGU7Ca7Hg==
-  dependencies:
-    cheerio "^0.22.0"
-    moment "^2.27.0"
-    moment-timezone "^0.5.31"
-    remark "^11.0.2"
-    remark-footnotes "^1.0.0"
-    unist-util-visit "^2.0.0"
-
-"@tryghost/url-utils@^1.1.2":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@tryghost/url-utils/-/url-utils-1.1.3.tgz#d9434c5fb4ac850eb68fbe9eec312f42b95c8676"
-  integrity sha512-oUbf1kfQuoD3GYQYjBuLcxO0ToCbrGj2KQaM2VoWEPGVD2WFy35gMG2/lUB40otG3zjljnLCa2+I9areaWI8cQ==
   dependencies:
     cheerio "^0.22.0"
     moment "^2.27.0"
@@ -1200,10 +1181,10 @@ ansi-regex@^4.1.0:
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
   integrity sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
 
-ansi-regex@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
-  integrity sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
+ansi-regex@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
+  integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
 
 ansi-styles@^2.2.1:
   version "2.2.1"
@@ -1893,6 +1874,14 @@ chalk@^2.0.0, chalk@^2.1.0, chalk@^2.4.1:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
+
+chalk@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
+  integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
 
 chalk@^4.0.0, chalk@^4.1.0, chalk@~4.1.0:
   version "4.1.1"
@@ -4228,7 +4217,7 @@ glob-parent@^5.0.0, glob-parent@~5.1.0:
   dependencies:
     is-glob "^4.0.1"
 
-glob@7.1.6, glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@~7.1.1, glob@~7.1.6:
+glob@7.1.6:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -4240,7 +4229,7 @@ glob@7.1.6, glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glo
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@7.1.7:
+glob@7.1.7, glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@~7.1.1, glob@~7.1.6:
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
   integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
@@ -4473,14 +4462,14 @@ grunt-mocha-cli@7.0.0:
   dependencies:
     mocha "^8.2.0"
 
-grunt-shell@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/grunt-shell/-/grunt-shell-3.0.1.tgz#24e783901543c7269980d534902bedfb94e7ec9f"
-  integrity sha512-C8eR4frw/NmIFIwSvzSLS4wOQBUzC+z6QhrKPzwt/tlaIqlzH35i/O2MggVOBj2Sh1tbaAqpASWxGiGsi4JMIQ==
+grunt-shell@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/grunt-shell/-/grunt-shell-4.0.0.tgz#9b04a18a59c3113f24391a3fb5625320538cbd1c"
+  integrity sha512-dHFy8VZDfWGYLTeNvIHze4PKXGvIlDWuN0UE7hUZstTQeiEyv1VmW1MaDYQ3X5tE3bCi3bEia1gGKH8z/f1czQ==
   dependencies:
-    chalk "^2.4.1"
+    chalk "^3.0.0"
     npm-run-path "^2.0.0"
-    strip-ansi "^5.0.0"
+    strip-ansi "^6.0.1"
 
 grunt-subgrunt@1.3.0:
   version "1.3.0"
@@ -6562,41 +6551,10 @@ mobiledoc-text-renderer@0.4.0:
   resolved "https://registry.yarnpkg.com/mobiledoc-text-renderer/-/mobiledoc-text-renderer-0.4.0.tgz#473fbe50aa6cde2c3b449752f3b984834dc824d2"
   integrity sha512-+Tzfo0hhUFxS0n5FWZ0nf6WUrvnVmsxaIdq0CyeLYD1lk8oW2ml+6WLdeLlzKM5OYYi3PWV6NR9HCUG01cdvWQ==
 
-mocha@8.4.0:
+mocha@8.4.0, mocha@^8.2.0:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-8.4.0.tgz#677be88bf15980a3cae03a73e10a0fc3997f0cff"
   integrity sha512-hJaO0mwDXmZS4ghXsvPVriOhsxQ7ofcpQdm8dE+jISUOKopitvnXFQmpRR7jd2K6VBG6E26gU3IAbXXGIbu4sQ==
-  dependencies:
-    "@ungap/promise-all-settled" "1.1.2"
-    ansi-colors "4.1.1"
-    browser-stdout "1.3.1"
-    chokidar "3.5.1"
-    debug "4.3.1"
-    diff "5.0.0"
-    escape-string-regexp "4.0.0"
-    find-up "5.0.0"
-    glob "7.1.6"
-    growl "1.10.5"
-    he "1.2.0"
-    js-yaml "4.0.0"
-    log-symbols "4.0.0"
-    minimatch "3.0.4"
-    ms "2.1.3"
-    nanoid "3.1.20"
-    serialize-javascript "5.0.1"
-    strip-json-comments "3.1.1"
-    supports-color "8.1.1"
-    which "2.0.2"
-    wide-align "1.1.3"
-    workerpool "6.1.0"
-    yargs "16.2.0"
-    yargs-parser "20.2.4"
-    yargs-unparser "2.0.0"
-
-mocha@^8.2.0:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-8.3.2.tgz#53406f195fa86fbdebe71f8b1c6fb23221d69fcc"
-  integrity sha512-UdmISwr/5w+uXLPKspgoV7/RXZwKRTiTjJ2/AC5ZiEztIoOYdfKb19+9jNmEInzx5pBsCyJQzarAxqIGBNYJhg==
   dependencies:
     "@ungap/promise-all-settled" "1.1.2"
     ansi-colors "4.1.1"
@@ -9171,19 +9129,19 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
-strip-ansi@^5.0.0, strip-ansi@^5.1.0, strip-ansi@^5.2.0:
+strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
 
-strip-ansi@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.0.tgz#0b1571dd7669ccd4f3e06e14ef1eed26225ae532"
-  integrity sha512-AuvKTrTfQNYNIctbR1K/YGTR1756GycPsg7b9bdV9Duqur4gv6aKqHXah67Z8ImS7WEz5QVcOtlfW2rZEugt6w==
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
   dependencies:
-    ansi-regex "^5.0.0"
+    ansi-regex "^5.0.1"
 
 strip-json-comments@3.1.1, strip-json-comments@^3.0.1, strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
